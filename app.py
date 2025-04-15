@@ -1,6 +1,7 @@
 import streamlit as st
-from pdfminer.high_level import extract_text
 from components.Resume_Processing import Extract_Email
+from components.Resume_Processing import Process_Resume
+
 st.title("AI Job Screening Agent")
 Resume_Files = st.file_uploader(
     "Select Files only PDF",
@@ -17,8 +18,6 @@ if(st.button("Start")):
         st.write("Please Fill All the required Details")
     else:
         st.write("Process Started, Please Wait Until we Process")
-        for file in Resume_Files:
-            text = extract_text(file)
-            email = Extract_Email(text)
-            st.write("Email Sent To: ", email)
+        Process_Resume(Job_Description=Job_Description,Matching_Percentage = Matching_Percentage, Resume_Files=Resume_Files)
         st.write("Process Completed")
+        

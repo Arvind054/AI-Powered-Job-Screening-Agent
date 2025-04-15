@@ -2,12 +2,11 @@
 langchain
 langchain-google-genai
 langchain_community
-
 # PDF Parsing
 pypdf
 
 # Vector Database
-faiss-cpu
+chromadb
 # Environment Variables
 python-dotenv
 
@@ -16,3 +15,6 @@ streamlit
 
 ## Text Extraction
 pdfminer.six
+
+## For Similarity 
+scikit-learn
