@@ -1,0 +1,18 @@
+# LangChain Core
+langchain
+langchain-google-genai
+langchain_community
+
+# PDF Parsing
+pypdf
+
+# Vector Database
+faiss-cpu
+# Environment Variables
+python-dotenv
+
+# UI
+streamlit
+
+## Text Extraction
+pdfminer.six
